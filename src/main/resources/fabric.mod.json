@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "practice",
+	"version": "${version}",
+	"name": "practice",
+	"description": "Practice Minecraft mod for Grain",
+	"authors": [
+		"Grain"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/practice/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.grain.Practice"
+		],
+		"client": [
+			"com.grain.PracticeClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "practice.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
