@@ -1,6 +1,7 @@
 package com.grain;
 
 import com.grain.commands.Commands;
+import com.grain.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public class Practice implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	private final Commands commandsClass = new Commands();
+	private final ModItems modItemsClass = new ModItems();
 
 	@Override
 	public void onInitialize() {
